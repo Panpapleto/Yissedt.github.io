@@ -1,0 +1,66 @@
+/* Estilo para todos los iconos de Font Awesome */
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  /* Agrega un efecto hover si lo deseas */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  /* Establece un color específico para cada red social */
+  /* Facebook */
+  .fa-facebook {
+    background-image:linear-gradient(to bottom, #798399, #3B5998, #798399);
+    color: white;
+  }
+
+  /* Twitter */
+  .fa-twitter {
+    background-image:linear-gradient(to bottom, #a0ccee, #55ACEE, #a0ccee);
+    color: white;
+  }
+
+  /* LinkedIn */
+  .fa-linkedin {
+    background-image:linear-gradient(to bottom, #6797b1, #0077B5, #6797b1);
+    color: white;
+  }
+
+  /* Instagram */
+  .fa-instagram {
+    background-image:linear-gradient(to bottom,
+    #ae00d1b2, #ff1ac6ec, #fa2f2fb9, #f84f1be0, #f4f818ea);
+    color: white;
+  }
+
+  /* WhatsApp */
+  .fa-whatsapp {
+    background-image:linear-gradient(to bottom,#8cd4a6, #25D366, #8cd4a6);
+    color: white;
+  }
+
+  /* Mail */
+  .fa-envelope {
+    background-image:linear-gradient(to bottom,#fd9494, #fc2525, #fd9494);
+    color: white;
+  }
+
+   /* ReseachGate */
+   .fa-researchgate {
+    background-image:linear-gradient(to bottom,#626b81, #304880, #626b81);
+    color: white;
+  }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página personal</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+		}
+		header {
+              color: #fff;
+  background-image: linear-gradient(to bottom, #C52D0F, #E74C3C, #C52D0f);
+              padding: 20px;
+}
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		nav ul li {
+			margin: 0 10px;
+		}
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			border-radius: 5px;
+		}
+		nav ul li a:hover {
+			background-color: #666;
+		}
+		main {
+			margin: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		h1 {
+                        font-size: 36px;
+			margin-bottom: 20px;
+		}
+		section {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+			margin-bottom: 20px;
+			width: 100%;
+			max-width: 800px;
+		}
+		section h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		section p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+		form label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		form input, form textarea {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 10px;
+			width: 100%;
+			max-width: 400px;
+		}
+		form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			cursor: pointer;
+		}
+		form input[type="submit"]:hover {
+			background-color: #666;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Mi página personal</h1>
+			<ul>
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#currículum">Currículum</a></li>
+				<li><a href="#publicaciones">Publicaciones</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="inicio">
+			<h2>Bienvenido a mi página personal</h2>
+			<p>En esta página encontrarás información sobre mí y mis intereses.</p>
+		</section>
+		<section id="currículum">
+			<h2>Currículum</h2>
+			<p>Aquí puedes encontrar mi currículum y mi experiencia laboral.</p>
+<ul>
+<li>Estudios:</li>
+<ul>
+<li>Grado en Informática, Universidad Complutense de Madrid</li>
+<li>Máster en Desarrollo Web, Universidad Politécnica de Madrid</li>
+</ul>
+<li>Experiencia laboral:</li>
+<ul>
+<li>Desarrollador Web, ABC Software (2018-2021)</li>
+<li>Analista Programador, XYZ Solutions (2016-2018)</li>
+</ul>
+</ul>
+</section>
+<section id="publicaciones">
+<h2>Publicaciones</h2>
+<p>Aquí puedes encontrar mis publicaciones más recientes:</p>
+<ul>
+<li><a href="#">Cómo crear una página web desde cero</a></li>
+<li><a href="#">10 consejos para mejorar tu presencia en redes sociales</a></li>
+</ul>
+<form>
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required>
+<label for="correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" required>
+<label for="comentario">Comentario:</label>
+<textarea id="comentario" name="comentario" rows="4" required></textarea>
+<input type="submit" value="Enviar">
+</form>
+</section>
+</main>
+<script>
+// Aquí puedes agregar código JavaScript personalizado
+</script>
+
+</body>
+</html>
