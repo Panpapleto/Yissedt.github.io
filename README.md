@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="redes.css">
+<link rel="stylesheet" href="carrusel.css">
+<script src="https://kit.fontawesome.com/ad1334d251.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +40,7 @@ font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
 			display: flex;
+			box-sizing: border-box;
 		}
 		nav ul li {
 			margin: 0 10px;
@@ -116,6 +119,52 @@ font-family: Arial, sans-serif;
 			</ul>
 		</nav>
 	</header>
+	<div id="conteItemsCarrusel">
+		<div class="itemCarrusel" id="itemCarrusel-1">
+			<div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+				<img src="perfil.JPG" alt="graduación">
+			</div>
+			<div class="flechasCarrusel">
+				<a href="#itemCarrusel-3">
+					<i class="fas fa-chevron-left"></i>
+				</a>
+				<a href="#itemCarrusel-2">
+					<i class="fas fa-chevron-right"></i>
+				</a>
+			</div>
+		</div>
+		<div class="itemCarrusel" id="itemCarrusel-2">
+			<div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+				B
+			</div>
+			<div class="flechasCarrusel">
+				<a href="#itemCarrusel-1">
+					<i class="fas fa-chevron-left"></i>
+				</a>
+				<a href="#itemCarrusel-3">
+					<i class="fas fa-chevron-right"></i>
+				</a>
+			</div>
+		</div>
+		<div class="itemCarrusel" id="itemCarrusel-3">
+			<div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+				C
+			</div>
+			<div class="flechasCarrusel">
+				<a href="#itemCarrusel-2">
+					<i class="fas fa-chevron-left"></i>
+				</a>
+				<a href="#itemCarrusel-1">
+					<i class="fas fa-chevron-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+    <div id="contePuntos">
+        <a href="#itemCarrusel-1">*</a>
+        <a href="#itemCarrusel-2">*</a>
+        <a href="#itemCarrusel-3">*</a>
+    </div>
 	<main>
 		<section id="inicio">
 			<h2>Inicio</h2>
@@ -148,7 +197,7 @@ font-family: Arial, sans-serif;
 <a href="https://wa.me/56937571538" class="fa fa-whatsapp"></a>
 <a href="mailto:leyla.math@gmail.com" class="fa fa-envelope"></a>
 <a href=""><i class="fab fa-researchgate"></i></a>
-<form>
+<form action="mailto:gabrielaguirre@usach.cl" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
 <label for="nombre">Nombre:</label>
 <input type="text" id="nombre" name="nombre" required>
 <label for="correo">Correo electrónico:</label>
@@ -156,11 +205,30 @@ font-family: Arial, sans-serif;
 <label for="comentario">Comentario:</label>
 <textarea id="comentario" name="comentario" rows="4" required></textarea>
 <input type="submit" value="Enviar">
-</form>
-<form action=""method="post">
-	<input type="file" name="file" id="file">
+
+	<input type="file" name="file" id="file" onchange="previewImage(event)">
 	<div id="preview" class="styleImage"></div>
+	<input type="submit" value="Subir archivo" name="submit">
 </form>
+
+<script>
+function validateForm() {
+	var file = document.getElementById("file").value;
+	if (file == "") {
+		alert("Please select a file.");
+		return false;
+	}
+}
+
+function previewImage(event) {
+	var reader = new FileReader();
+	reader.onload = function() {
+		var output = document.getElementById('preview');
+		output.src = reader.result;
+	}
+	reader.readAsDataURL(event.target.files[0]);
+}
+</script>
 </section>
 </main>
 <script src="js/main.js"></script>
