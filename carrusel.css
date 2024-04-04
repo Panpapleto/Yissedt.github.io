@@ -60,3 +60,8 @@ red
 #contepuntos > a{
     font-size: 1.5em;
 }
+
+img{
+    width: 100%;
+    height: 100%;
+}
