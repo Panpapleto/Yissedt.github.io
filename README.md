@@ -135,7 +135,7 @@ font-family: Arial, sans-serif;
 		</div>
 		<div class="itemCarrusel" id="itemCarrusel-2">
 			<div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
-				B
+				<img src="evento.jpeg" alt="viña">
 			</div>
 			<div class="flechasCarrusel">
 				<a href="#itemCarrusel-1">
@@ -148,7 +148,7 @@ font-family: Arial, sans-serif;
 		</div>
 		<div class="itemCarrusel" id="itemCarrusel-3">
 			<div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
-				C
+				<img src="frontis.jpeg" alt="ucm">
 			</div>
 			<div class="flechasCarrusel">
 				<a href="#itemCarrusel-2">
