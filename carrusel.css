@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#conteItemsCarrusel{
+    border: 5px solid rgba(124, 189, 50, 0.829);
+    height: 200px;
+    overflow: hidden;
+}
+
+.itemCarrusel{
+    border: 1px solid rgb(59, 33, 156);
+    height: 100px;
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    height: 100%;
+}
+
+.flechasCarrusel{
+    background-color: rgb(rgb(117, 56, 56), rgb(91, 196, 91), blue);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tarjetaCarrusel-1{
+    background-color: rgb(rgb(192, 90, 170), green, blue);
+}
+
+#tarjetaCarrusel-2{
+    background-color: rgb(rgb(192, 90, 170), green, blue);
+}
+
+#tarjetaCarrusel-3{
+    background-color: rgb(rgb(192, 90, 170), green, blue);
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: blue
+}
+red
+#contePuntos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#contepuntos > a{
+    font-size: 1.5em;
+}
